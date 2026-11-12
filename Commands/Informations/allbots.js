@@ -106,7 +106,7 @@ export const command = {
 			.setTitle('Liste des Bots')
 			.setDescription(bots.map(bot => `<@${bot.user.id}> - ${bot.user.id}`).join('\n'))
 			.setColor(config.color)
-			.setFooter({ text: '4Protect V2' });
+			.setFooter({ text: 'Naruto RP' });
 
 		return message.reply({ embeds: [embed], allowedMentions: { repliedUser: false } });
 	},

@@ -106,7 +106,7 @@ export const command = {
 			.setTitle('Liste des bannissements')
 			.setDescription(bans.map(ban => `<@${ban.user.id}> - ${ban.user.tag}`).join('\n'))
 			.setColor(config.color)
-			.setFooter({ text: '4Protect V2' });
+			.setFooter({ text: 'Naruto RP' });
 
 		return message.reply({ embeds: [embed], allowedMentions: { repliedUser: false } });
 	},

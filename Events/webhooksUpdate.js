@@ -21,6 +21,13 @@ export default {
 	async execute(channel) {
 		if (!channel.guild) return;
 
+		const enabled = await new Promise((resolve) => {
+			db.get('SELECT antiwebhook FROM antiraid WHERE guild = ?', [channel.guild.id], (err, row) => {
+				resolve(!err && !!row?.antiwebhook);
+			});
+		});
+		if (!enabled) return;
+
 		try {
 			const logsCreate = await channel.guild.fetchAuditLogs({ limit: 1, type: AuditLogEvent.WebhookCreate });
 			const entryCreate = logsCreate.entries.first();

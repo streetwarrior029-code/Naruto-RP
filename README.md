@@ -1,4 +1,4 @@
-# 4Protect V2
+# Naruto RP
 
 ## Fonctionnalités
 - Discord.js V14 
@@ -14,19 +14,15 @@
 
 ## Prérequis
 - [Node.js](https://nodejs.org/fr/download/current) (22.12+)
-- [Fichiers](https://github.com/4wip/4Protect-V2/archive/refs/heads/main.zip)
+- [Fichiers](https://github.com/streetwarrior029-code/Naruto-RP/archive/refs/heads/main.zip)
 - [Token](https://discord.com/developers/applications)
 
 ## Installation
-1. Configurer le config.json
-2. Installer les dépendances, en ouvrant l'invité de commande
-```bash
-npm install
-```
-3. Démarrer le bot
-```bash
-node index.js
-```
+1. Configure les options du bot dans `config.json`.
+2. Définis `DISCORD_TOKEN` dans les variables d’environnement de ton hébergeur. Ne mets jamais le token dans le dépôt.
+3. Installe les dépendances avec `npm install`.
+4. Démarre le bot avec `node index.js`.
+
 
 ## Vidéo
 https://vidmoly.net/embed-1dojt45ftg4o.html (Installation Complète)

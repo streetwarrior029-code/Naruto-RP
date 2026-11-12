@@ -127,7 +127,7 @@ export const command = {
 			const embed = new EmbedBuilder()
 				.setDescription(description)
 				.setColor(config.color)
-				.setFooter({ text: '4Protect V2' });
+				.setFooter({ text: 'Naruto RP' });
 
 			message.reply({ embeds: [embed], allowedMentions: { repliedUser: false } });
 		});

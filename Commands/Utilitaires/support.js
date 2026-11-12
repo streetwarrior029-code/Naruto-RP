@@ -5,7 +5,7 @@ import db from "../../Events/loadDatabase.js";
 export const command = {
 	name: 'support',
 	helpname: 'support',
-	description: 'Permet de rejoindre le serveur support de 4Protect',
+	description: 'Permet de rejoindre le serveur support de Naruto RP',
 	help: 'support',
 	run: async (bot, message, args, config) => {
 		const checkPerm = async (message, commandName) => {

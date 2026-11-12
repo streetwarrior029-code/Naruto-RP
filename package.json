@@ -1,12 +1,12 @@
 {
-	"name": "4protect-v2",
+	"name": "naruto-rp",
 	"version": "2.0",
-	"description": "Le bot gestion de 4wip",
+	"description": "Bot de gestion pour Naruto RP",
 	"main": "index.js",
 	"author": "4wip",
-	"homepage": "https://github.com/4wip/4protect-v2",
-	"repository": "github:4wip/4protect",
-	"bugs": "https://github.com/4wip/4protect-v2/issues",
+	"homepage": "https://github.com/streetwarrior029-code/Naruto-RP",
+	"repository": "github:streetwarrior029-code/Naruto-RP",
+	"bugs": "https://github.com/streetwarrior029-code/Naruto-RP/issues",
 	"type": "module",
 	"dependencies": {
 		"@discordjs/rest": "^2.6.0",

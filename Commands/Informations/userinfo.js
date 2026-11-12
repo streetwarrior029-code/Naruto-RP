@@ -116,7 +116,7 @@ export const command = {
 				{ name: 'Sur le serveur depuis', value: `<t:${Math.floor(member.joinedTimestamp / 1000)}:F>`, inline: true },
 				{ name: 'Rôles', value: member.roles.cache.map(role => role.name).join(', ') || 'Aucun', inline: false },
 			)
-			.setFooter({ text: '4Protect V2' });
+			.setFooter({ text: 'Naruto RP' });
 
 		return message.reply({ embeds: [embed], allowedMentions: { repliedUser: false } });
 	},

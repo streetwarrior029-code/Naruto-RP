@@ -20,14 +20,14 @@ bot.commands = new Discord.Collection();
 bot.slashCommands = new Discord.Collection();
 bot.setMaxListeners(70);
 
-bot.login(config.token)
+bot.login(process.env.DISCORD_TOKEN)
 	.then(() => {
 		console.log(`[INFO] > ${bot.user.tag} est connecté`);
 		console.log(`[Invite] https://discord.com/oauth2/authorize?client_id=${bot.user.id}&permissions=8&integration_type=0&scope=bot`);
 		console.log(`[Support] https://dsc.gg/4wip`);
 	})
 	.catch((e) => {
-		console.log('\x1b[31m[!] — Please configure a valid bot token or allow all the intents\x1b[0m');
+		console.log('\x1b[31m[!] — Configure DISCORD_TOKEN et vérifie les intents du bot\x1b[0m');
 	});
 
 bot.giveawaysManager = new GiveawaysManager(bot, {
